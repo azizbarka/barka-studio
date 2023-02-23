@@ -185,7 +185,7 @@ section {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-image: url(/images/screenshots/pickup-view.png);
+    background-image: url(./images/screenshots/pickup-view.png);
 }
 
 .intro .game-logo {
@@ -345,7 +345,7 @@ section {
 
 .mobile {
     position: relative;
-    background-image: url(/images/phone.png);
+    background-image: url(./images/phone.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
