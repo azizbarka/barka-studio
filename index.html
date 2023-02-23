@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barka Studio</title>
+    <link href="style.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+</head>
+
+<body>
+
+    <!--nav bar-->
+    <nav>
+
+        <img class="logo" src="/images/barka.png" />
+        <ul>
+            <li><a class="oof-item selected" href="/"><span data-lang="game">Out Of Fuel</span><img src="/images/FuelBottle.png"/></a></li>
+            <li><a data-lang="privacy" href="/privacy-policy.html">privacy policy</a></li>
+            <li><a data-lang="about" href="#about">about us</a></li>
+            <li><a data-lang="contact" href="#about">contact us</a>
+            </li>
+        </ul>
+
+        <div class="right">
+            <!--Language options-->
+            <div class="lang-container">
+                <div id="langbox" class="lang-box ">
+                    <div data-lang="name" class="selected">
+                        English
+                    </div>
+                    <i class="drop-pointer fa-sharp fa-solid fa-caret-down"></i>
+                    <ol class="lang-list-box">
+                        <li id="ar">العربية</li>
+                        <li id="en">English</li>
+                    </ol>
+                </div>
+            </div>
+
+            <!--Social-->
+            <div class="social-links">
+                <a href="https://www.youtube.com"><img src="/images/youtube.png" /></a>
+                <a href="https://www.facebook.com"><img src="/images/facebook.png" /></a>
+                <a href="https://www.twitter.com"><img src="/images/twitter.png" /></a>
+            </div>
+        </div>
+        <div id="menuButton" class="menu-button">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div id="menuList" class="menu-list">
+            <ul>
+                <li><a class="oof-item selected" onclick="menuList.classList.toggle('active')" href="\"><span data-lang="game">Out Of Fuel</span><img src="/images/FuelBottle.png"/></a></li>
+                <li><a data-lang="privacy" onclick="menuList.classList.toggle('active')" href="/privacy-policy.html">privacy policy</a></li>
+                <li><a data-lang="about" onclick="menuList.classList.toggle('active')" href="#about">about us</a></li>
+                <li><a data-lang="contact" onclick="menuList.classList.toggle('active')" href="#about">contact us</a>
+                </li>
+            </ul>
+        </div>
+
+
+    </nav>
+
+
+    <div class="intro opacity-anim-2">
+        <img class="game-logo" src="/images/screenshots/out-of-fuel-logo.png" />
+        <div class="os-icons">
+            <img class="opacity-anim-2-d1" src="/images/android.png" />
+            <img class="opacity-anim-2-d2" src="/images/ios.png" />
+        </div>
+        <div class="download">
+            <a href="#store-links" class="download-button">
+                <p data-lang="download_button">Download</p>
+            </a>
+            <small data-lang="download_info">Get it from the store</small>
+        </div>
+    </div>
+    <!--Sections-->
+    <section class="bg-white">
+        <div class="game-title">
+            <img src="/images/launcher.png" />
+            <h3 data-lang="game">OUT OF FUEL</h3>
+        </div>
+
+        <div class="content">
+            <div class="content-left">
+                <div id="screen-list" class="screen-list">
+                    <img class="inactive active" src="/images/screenshots/screen-0.png" />
+                    <img class="inactive" src="/images/screenshots/screen-1.png" />
+                    <img class="inactive" src="/images/screenshots/screen-2.png" />
+                    <img class="inactive" src="/images/screenshots/screen-3.png" />
+                </div>
+            </div>
+            <div id="gameinfo" class="content-right">
+                <p data-lang="game_info" class="pd-30">
+                    Out of fuel is a challenging game on mobile platforms. The main challenge is to drive a car with low fuel to reach the gas station before it runs out of fuel ,including additional challenges while playing, such as obstacles , thorns , barrels and tornados.
+                </p>
+                <strong data-lang="download" class="pd-30">Download the game now:</strong>
+
+                <div id="store-links" class="store-links">
+                    <a href="#"><img src="/images/appstore.png" /></a>
+                    <a href="#"><img src="/images/playstore.png" /></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="bg-white">
+        <div class="section-header">
+            <h3 data-lang="about">About US</h3>
+        </div>
+        <div class="content pd-10">
+            <p data-lang="about_info">Barka Studio was founded by Abdulaziz Barakat in 2023. Abdulaziz is the owner and has been working as an indie game developer in all aspects of the games industry (Programming, Modeling, UI Design & Art, Music). Out of fuel is the first game
+                by the studio and there are also some upcoming games. We will declare them through social accounts. The studio plans to make high quality games with new ideas for mobile platforms and then expand to publish on consoles (PlayStation/Xbox/Nintendo).
+                <br>The studio is currently located in Saudi Arabia and we are planning to have many members from worldwide and in other countries too.
+            </p>
+        </div>
+    </section>
+
+    <!--footer-->
+    <div class="footer">
+        <div class="footer-content">
+            <img src="/images/barka_gray.png" />
+            <div>
+                <small data-lang="copy">Copyright &copy; 2023 BARKA Studio.All rights reserved</small>
+            </div>
+
+            <a data-lang="contact" href="mailto:help@barkastudio.com" class="contact">Contact us</a>
+
+        </div>
+    </div>
+
+
+
+    <!--Scripts-->
+    <script>
+        //switch screens
+        var list = document.getElementById("screen-list");
+        var screens = list.getElementsByTagName("img");
+        var index = 0;
+
+        setInterval(function() {
+
+            screens.item(index).classList.toggle("active");
+            index++;
+            if (index >= screens.length)
+                index = 0;
+
+            screens.item(index).classList.toggle("active");
+
+
+        }, 3000);
+        //handle languages 
+        var langeBox = document.getElementById("langbox");
+        var langList = langeBox.getElementsByClassName("lang-list-box")[0];
+        var langItems = langList.getElementsByTagName("li");
+        langeBox.addEventListener("click", function(event) {
+            langList.classList.toggle("active");
+        });
+
+        //localization
+        const localizations = {
+            ar: {
+                name: "العربية",
+                download_button: "تحميل",
+                download_info: "أحصل عليها من المتجر",
+                contact: "إتصل بنا",
+                about: "تعرف علينا",
+                privacy: "سياسة الخصوصية",
+                game: "OUT OF FUEL لعبة",
+                game_info: "لعبة نفذ الوقود هي لعبة تحدى على منصات الهوات المحمولة .التحدي الاساسي في اللعبة إيصال المركبة إلى محطة الوقود قبل نفاذه بالإضافة يوجد تحديات أثناء اللعب كالحواجز و الاشواك و الخزانات القابلة للانفجار والاعاصير.",
+                download: ":حمل اللعبة الأن",
+                copy: "2023 &copy; Barka Studio جميع الحقوقة محفوظة لـ",
+                about_info: "إستديو بركة تم تأسيسه بواسطة عبدالعزيز بركات في عام 2023، عبدالعزيز هو المالك عمل كمطور العاب مستقل في جميع جوانب العمل في صناعة الالعاب ( البرمجة ، النمذجة ، تصميم الواجهات و الرسومات ، إنتاج الموسيقى). لعبة نفذ الوقود هي اللعبة الأولى لدى الإستديو . ويوجد ايضا بعض الألعاب القادمة سوف يتم الاعلان عنها عبر وسائل التواصل الاجتماعي .يهدف الإستديو إلى تطوير العاب ذات جودة عالية بأفكار جديدة في منصات الهواتف المحمولة ومن ثم التوسع لتطوير والنشر في منصات وحدات التحكم ( بلايستشين - أكس بوكس  - نينتيندو ) موقع الإستديو الحالي في المملكة العربية السعودية ومخطط لإستقبال عدة أعضاء من جميع إنحاء العالم و التوسع و العمل في دول أخرى. "
+            },
+            en: {
+                name: "English",
+                download_button: "Download",
+                download_info: "Get it from the store",
+                contact: "Contact us",
+                about: "About us",
+                privacy: "Privacy Policy",
+                game: "OUT OF FUEL",
+                game_info: "Out of fuel is a challenging game on mobile platforms. The main challenge is to drive a car with low fuel to reach the gas station before it runs out of fuel ,including additional challenges while playing, such as obstacles , thorns , barrels and tornados.",
+                download: "Download the game now",
+                copy: "Copyright &copy; 2023 BARKA Studio.All rights reserved",
+                about_info: "Barka Studio was founded by Abdulaziz Barakat in 2023. Abdulaziz is the owner and has been working as an indie game developer in all aspects of the games industry (Programming, Modeling, UI Design & Art, Music). Out of fuel is the first game by the studio and there are also some upcoming games. We will declare them through social accounts. The studio plans to make high quality games with new ideas for mobile platforms and then expand to publish on consoles (PlayStation/Xbox/Nintendo).The studio is currently located in Saudi Arabia and we are planning to have many members from worldwide and in other countries too."
+            }
+        }
+        for (var i = 0; i < langItems.length; i++) {
+            langItems.item(i).addEventListener("click", function(event) {
+                setLang(this.id);
+
+            });
+
+        }
+        //menu handling
+        var menubtn = document.getElementById("menuButton");
+        var menuList = document.getElementById("menuList");
+        menubtn.addEventListener("click", function(event) {
+            menuList.classList.toggle("active");
+        });
+
+        function setLang(id) {
+            var fields = document.querySelectorAll("[data-lang]");
+            fields.forEach(element => {
+                element.innerHTML = localizations[id][element.getAttribute("data-lang")]
+            });
+        }
+    </script>
+</body>
+
+</html>
