@@ -1,1 +1,0 @@
-permalink: /ads.txt
